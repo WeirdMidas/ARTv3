@@ -1,4 +1,6 @@
 # ARTv3
+![1000004060](https://github.com/user-attachments/assets/6e5ab2d0-e91d-40b7-9fd0-38e53b7554c6)
+" You are never stronger than when you land on the other side of despair. "
 
 ## Basic, Efficient and Open-Source for enthusiasts
 A very basic ART/JIT optimization, made for fun and also test the way ART/JIT is managed in Android and perhaps create formulas that work better in a real environment and in human perception.
@@ -26,3 +28,4 @@ A very basic ART/JIT optimization, made for fun and also test the way ART/JIT is
 If you use it together with my Basic Cleaner module, remember to set the same final cleaning times in the panels of this module and the basic cleaner. Don't worry, both will not run at the same time. Whereas the basic cleaner and ARTv3 when run, they will check the period between them. The first one that runs will cancel the execution of the second one because it is in the same "period".
 
 ### Credits
+Credits to the artist, I won't be able to send it because I couldn't find the name.
