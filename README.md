@@ -15,13 +15,15 @@ A very basic ART/JIT optimization, made for fun and also test the way ART/JIT is
 ## Features
 - Set SystemUi and System_Server to more efficient profiles for use. This improves the accuracy of memory management and even cleans it up with HeapTaskDaemon, the System_Server garbage collector. Apply speed-profile also for image compilation, and in turn, for ROM OAT updates.
 - Apply at the end of each month (30 days after the module was installed), DEX file synchronization, image compilation, and unused DEX file cleaning are applied. In addition: allow the user to modify the timing of these optimizations.
-- Zygote compression and prefork, to minimize memory fragmentation and improve app startup by having Zygote preloaded in shared memory.
+- Zygote compression, critical window and prefork, to minimize memory fragmentation and improve app startup by having Zygote preloaded in shared memory.
 - Pin ART compilation on big cores to improve batch performance by up to +20% when starting apps. If compilation occurs in the background, use only small cores, saving energy.
-- Avoid using debug libartd, use production libartd and cut out debugs that only get in the way and fill applications with useless code, reducing the size of apps and providing slight space savings.
 - Rest assured that we will use ART and JIT simultaneously, allowing users to take full advantage of the optimizations of both technologies. Preliminary improvements include adding JIT profiles to devices running Android 13 and lower.
 - Make sure the DEX is 64bit, for ROMs that don't have this optimization.
-- Reduce memory footprint and storage usage, making ART more efficient and economical depending on the environment it is placed in.
+- Make the way usage profiles are saved even more accurate based on real human experience, allowing the initial build (speed-profile) to be much more accurate and efficient compared to the original Android values.
+- Choose the most optimal GC based on device compatibility, allowing garbage collection to be as efficient as possible even on devices without modern technologies.
 - Every ten days, if an app is not used during that period, it is considered "discarded", reducing its optimizations to save space.
+- Compile apps when the device is idle and charging using higher performance profiles by taking advantage of the device's charging and sleep state, such as when the device is on the desktop while the user is sleeping, etc.
+- Apply miscellaneous and secondary optimizations to avoid JIT as much as possible in areas where it is not reliable, such as secondary data and others.
 - And best of all... it's Open Source! If you want to help this project with additional optimizations, tips, etc., let me know, I'd really appreciate help with this project that I made with the purpose of being fun and a way to pass the time.
 
 ### Warning!
