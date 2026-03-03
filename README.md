@@ -2,6 +2,9 @@
 ![1000004060](https://github.com/user-attachments/assets/6e5ab2d0-e91d-40b7-9fd0-38e53b7554c6)
 " You are never stronger than when you land on the other side of despair. "
 
+### The project has been cancelled!
+I'm focusing a lot on the SkyScene Add-on and other memory management optimization projects, like the new LMK-Addon, and since then, I've drastically changed how the Dalvik/ART properties and parameters work for better efficiency and performance, which I will test in SkyScene. So the project was abandoned to have fewer projects for me to focus on and have more room to maneuver, I hope you understand and have faith.
+
 ## Basic, Efficient and Open-Source for enthusiasts
 A very basic ART/JIT optimization, made for fun and also test the way ART/JIT is managed in Android and perhaps create formulas that work better in a real environment and in human perception.
 
